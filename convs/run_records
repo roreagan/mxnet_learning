@@ -1,0 +1,26 @@
+GoogleNet:
+lr: 0.01
+Epoch 0. Loss: 2.302, Train acc 0.14, Test acc 0.09, Time 20.3 sec
+Epoch 1. Loss: 2.301, Train acc 0.14, Test acc 0.09, Time 16.0 sec
+Epoch 2. Loss: 2.301, Train acc 0.15, Test acc 0.09, Time 15.6 sec
+Epoch 3. Loss: 2.300, Train acc 0.11, Test acc 0.09, Time 16.2 sec
+Epoch 4. Loss: 2.299, Train acc 0.15, Test acc 0.09, Time 16.5 sec
+Epoch 5. Loss: 2.298, Train acc 0.11, Test acc 0.09, Time 16.2 sec
+Epoch 6. Loss: 2.298, Train acc 0.12, Test acc 0.09, Time 15.8 sec
+Epoch 7. Loss: 2.297, Train acc 0.11, Test acc 0.09, Time 14.8 sec
+Epoch 8. Loss: 2.296, Train acc 0.11, Test acc 0.09, Time 15.6 sec
+Epoch 9. Loss: 2.295, Train acc 0.11, Test acc 0.12, Time 15.4 sec
+
+
+DenseNet:
+lr: 0.1
+Epoch 0. Loss: 4.685, Train acc 0.43, Test acc 0.64, Time 35.0 sec
+Epoch 1. Loss: 0.828, Train acc 0.70, Test acc 0.68, Time 28.4 sec
+Epoch 2. Loss: 0.917, Train acc 0.72, Test acc 0.68, Time 38.0 sec
+Epoch 3. Loss: 0.695, Train acc 0.75, Test acc 0.78, Time 31.1 sec
+Epoch 4. Loss: 2.015, Train acc 0.68, Test acc 0.71, Time 36.5 sec
+Epoch 5. Loss: 0.666, Train acc 0.75, Test acc 0.73, Time 27.6 sec
+Epoch 6. Loss: 0.781, Train acc 0.77, Test acc 0.73, Time 27.7 sec
+Epoch 7. Loss: 0.565, Train acc 0.80, Test acc 0.78, Time 27.6 sec
+Epoch 8. Loss: 0.514, Train acc 0.80, Test acc 0.79, Time 27.6 sec
+Epoch 9. Loss: 0.462, Train acc 0.82, Test acc 0.81, Time 27.6 sec
