@@ -94,7 +94,7 @@ class GoogLeNet(nn.Block):
 
 
 train_data, test_data = utils.load_data_fashion_mnist(
-    batch_size=64, resize=96)
+    batch_size=64, resize=96, root='E://deeplearningDatas/fashion-mnist')
 
 ctx = utils.try_gpu()
 net = GoogLeNet(10)
