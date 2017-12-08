@@ -2,6 +2,7 @@ from mxnet import gluon
 from mxnet import init
 from mxnet.gluon.model_zoo import vision as models
 
+import mxnet as mx
 import zipfile
 import picUtils
 import utils
@@ -14,14 +15,14 @@ def get_hotdog_datas(data_dir='E://deeplearningDatas/hotdog'):
 
 
 def train(net, ctx, batch_size=64, epochs=100, learning_rate=0.01, wd=0.001, save_dir='./models/'):
-    train_data, test_data = picUtils.load_hotdog_pics()
+    train_data, test_data = picUtils.load_hotdog()
     net.collect_params().reset_ctx(ctx)
     net.hybridize()
     loss = gluon.loss.SoftmaxCrossEntropyLoss()
 
     trainer = gluon.Trainer(net.collect_params(), 'sgd', {'learning_rate': learning_rate, "wd": wd})
     utils.train(train_data, test_data, net, loss, trainer, ctx, epochs)
-    net.save_params(save_dir+'hotdog.params')
+    net.collect_params().save(save_dir+'hotdog.params')
 
 
 # get_hotdog_datas()
